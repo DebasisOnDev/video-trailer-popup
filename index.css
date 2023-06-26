@@ -1,0 +1,72 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 3px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.6);
+  font-family: sans-serif;
+  transition: opacity 1s;
+}
+.container img{
+  background-size: cover;
+  width: 400px;
+  height: auto;
+}
+.videocontainer{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+  margin: 25px;
+  transition: opacity 0.7s;
+  
+}
+.videocontainer button{
+  height: 30px;
+  width: 30px;
+  background: url("https://img.icons8.com/?size=512&id=71200&format=png");
+  background-size: cover;
+  border: none;
+ 
+  align-self: flex-end;
+  margin-top: -20px;
+  transition: 1s ease;
+}
+video{
+  display: flex;
+  height: auto;
+  width: auto;
+  background-size: cover;
+}
+.container button{
+  height: 45px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 0.5s ease-out;
+  
+}
+.container button:hover{
+  background-color: red;
+}
+.active{
+  display: none;
+}
+@media (max-width: 991px) {
+  .trailer-container video {
+    max-width: 90%;
+  }
+}
